@@ -1,0 +1,125 @@
+<style>
+.form-group{
+    margin-bottom:1.5em;
+    transition:all .3s;
+}
+.form-label{
+    font-size:.75em;
+    color:var(--font-color);
+    display:block;
+    opacity:0;
+    transition: all .3s;
+    transform:translateX(-50px);
+}
+.form-control{
+    box-shadow:none;
+    border-radius:0;
+    border-color:#ccc;
+    border-style:none none solid none;
+    width:100%;
+    font-size:1.25em;
+    transition:all .6s;
+}
+.form-control::placeholder{
+    color:#aaa;
+}
+.form-control:focus{
+    box-shadow:none;
+    border-color:var(--font-hover-color);
+    outline:none;
+}
+.form-group:focus-within{
+    transform:scale(1.1,1.1);
+}
+
+.form-control:invalid:focus{
+    border-color:red;
+}
+.form-control:valid:focus{
+    border-color:green;
+}
+
+.btn{
+    background: 0 0 #fff;
+    border:1px solid #aaa;
+    border-radius:3px;
+    color:var(--font-color);
+    font-size:1em;
+    padding:10 50px;
+    text-transform:uppercase;
+}
+.btn:hover{
+    border-color:var(--font-hover-color);
+    color:var(--font-hover-color);
+}
+textarea{
+    resize:none;
+}
+.focused > .form-label{
+    opacity:1;
+    transform:translateX(0px);
+
+}
+.body{
+  margin:0;
+  padding:0'
+ text-align: center;
+ background-position:center;
+ font-family:sans-serif;
+background-image: url('image.jfif');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+.contact-title
+{
+  margin-top:100px;
+  color: #fff;
+  text-transform:uppercase;
+  transition:all 4s ease-in-out;
+}
+.contact-title h1{
+   font-size:32px;
+  line-height:10px;
+}
+.contact-title h2
+{
+   font-size:16px;
+}
+form
+{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+.form-control
+{
+    width:600px;
+    background:transparent;
+     border: none;
+     outline:none;
+     border-bottom:1px solid gray;
+    color: #000;
+    font-size:18px;
+   margin-bottom: 16px;
+}
+input
+{
+    height:45px;
+}
+form .submit
+{
+   background: #ff5722;
+   border-color:transparent;
+   color: #fff;
+   font-size:20px;
+   font-weight: bold;
+  letter-spacing:2px;
+  height:50px;
+  margin-top: 20px;
+}
+form .submit:hover
+{
+   background-color: #f44336;
+   cursor: pointer;
+}
+</style>

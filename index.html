@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CV Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+  </head>
+  <body align="center" class="body">
+    <div class="contact-form">
+     <h1>CV Form</h1>
+          </div>
+          <div class="panel-body">
+            <form id="contact-form" action="connect.php" method="post">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                 required/>
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                required />
+              </div>
+              <div class="form-group">
+                <label for="contact number">Contact Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="contactnumber"
+                  name="contactnumber"
+                required />
+              </div>
+              <div class="form-group">
+                <label for="whatsapp number">Whatsapp Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="whatsappnumber"
+                  name="whatsappnumber"
+                required />
+              </div>
+            <div class="form-group">
+                <label for="reference name">Reference Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="referencename"
+                  name="referencename"
+                 required />
+              <div class="form-group">
+                <label for="qualification">Higher Qualification</label>
+                <select name="qualification" id="qualification" required>
+                 <option value="">--Select an Option--</option>
+                 <option value="Ba">Bachelors</option>
+                <option value="As">Associates</option>
+               <option value="Hs">High School</option>
+               <option value="Ma">Masters</option>
+            </select>
+            </div><br><br>
+             <div class="form-group">
+                <label for="interest">Area of Interest</label>
+                <select name="interest" id="interest" required>
+                 <option value="">--Select an Option--</option>
+                 <option value="hr">HR</option>
+                <option value="ma">Marketing</option>
+               <option value="fn">Finance</option>
+               <option value="wd">Web Development</option>
+            </select><br><br>
+            </div>
+              <input type="submit" class="form-control submit" value="SUBMIT" />
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
